@@ -4,7 +4,7 @@ import numpy as np
 
 for num in range(0,20):
     img = Image.open('Ann' + str(num) + '.jpg')
-
+    img = img.rotate(270)
     pixels = img.load()
 
     PixPerLEDW = img.size[0] / 32
@@ -52,4 +52,4 @@ for num in range(0,20):
             
         
 
-    img.save("NeedsRotate" + str(num) + ".jpg")
+    img.save('NeedsRotate' + str(num) + ".jpg")

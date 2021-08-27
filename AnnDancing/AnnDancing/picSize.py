@@ -41,6 +41,7 @@ for num in range(62, 82):
     # Cropped image of above dimension
     # (It will not change original image)
     im1 = im.crop((left, top, right, bottom))
+
     
     # Shows the image in image viewer
     im1.save('Ann' + str(num - 62) + '.jpg')
